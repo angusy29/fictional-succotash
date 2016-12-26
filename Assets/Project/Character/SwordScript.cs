@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SwordScript : MonoBehaviour {
-	private bool hiding;
+	static bool hiding;
 	static bool isSwinging;
 
 	//private Animator animator;
@@ -58,5 +58,9 @@ public class SwordScript : MonoBehaviour {
 
 	public static bool getIsSwinging() {
 		return isSwinging;
+	}
+
+	public static bool getIsHiding() {
+		return hiding;
 	}
 }

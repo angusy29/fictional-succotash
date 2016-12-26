@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fbfd4d368ee574c7599a3d7fdfcb65d2
+timeCreated: 1482722432
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SAO UI TT
+  fontNames:
+  - SAO UI TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0394bf2f492ac4f50a8d4b3a494c4d2c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

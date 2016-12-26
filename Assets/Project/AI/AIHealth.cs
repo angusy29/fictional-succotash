@@ -43,6 +43,7 @@ public class AIHealth : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player" && SwordScript.getIsSwinging()) {
 			currentHealth -= Random.Range (45, 65);
+			currentHealth = Mathf.Round (currentHealth);
 
 			if (currentHealth <= 0) {
 				healthBar.transform.localScale = new Vector3 (0, 1, 1);
