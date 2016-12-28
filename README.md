@@ -8,8 +8,8 @@ Created with Unity Engine.
 
 ## Screenshots
 
-![River](Screenshots/river.png "River")
-
+![River](Screenshots/river.png "River" | width=480)
+![Lake](Screenshots/lake.png "Lake" | width=480)
 
 ## Special Thanks
 
