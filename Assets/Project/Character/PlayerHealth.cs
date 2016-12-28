@@ -67,8 +67,8 @@ public class PlayerHealth : MonoBehaviour {
 
 		healthText.GetComponent<Text> ().text = currentHealth + "/ " + maxHealth;
 
-		if (fpsController.transform.GetChild(1).GetComponent<SwordScript>().getIsSwinging()) {
-			if (numFramesToSkip == 5) {
+		if (fpsController.transform.GetChild(1).GetComponent<SwordScript>().getIsHiding()) {
+			if (numFramesToSkip == 10) {
 				regenHealth ();
 				numFramesToSkip = 0;
 			}

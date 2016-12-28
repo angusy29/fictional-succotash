@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerStamina : MonoBehaviour {
@@ -54,6 +55,8 @@ public class PlayerStamina : MonoBehaviour {
 		}
 
 		if (!staminaIsDrained) {
+			staminaObject.GetComponent<Image> ().color = new Color (0.07f, 0.37f, 0.95f);
+
 			if (hasStaminaToRun()) {
 				// user is running so decrease stamina
 				if (Input.GetKey (KeyCode.LeftShift)) {
@@ -71,6 +74,10 @@ public class PlayerStamina : MonoBehaviour {
 					isAction = true;
 				}
 			}
+		}
+
+		if (staminaIsDrained) {
+			staminaObject.GetComponent<Image> ().color = new Color (1f, 0f, 0f);
 		}
 
 		if (!isAction && stamina < maxStamina) {

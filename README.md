@@ -25,7 +25,8 @@ Shift - Run
 Left click - Swing sword  
 Z - Hide sword  
 
-Health bar decreases when hit.
+Health bar decreases when hit.  
+Health can be regenerated if sword is hidden.
 
 Stamina drains when running or attacking.  
 Player cannot run or attack when the stamina completely depletes, until it replenishes back to full.  
