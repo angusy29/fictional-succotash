@@ -2,8 +2,11 @@
 using System.Collections;
 
 public class SwordScript : MonoBehaviour {
-	static bool hiding;
-	static bool isSwinging;
+	private bool hiding;
+	private bool isSwinging;
+
+	public GameObject player;
+	private PlayerStamina myStamina;
 
 	//private Animator animator;
 	private Animation anim;
@@ -13,17 +16,21 @@ public class SwordScript : MonoBehaviour {
 		hiding = false;
 		isSwinging = false;
 		//animator = GetComponent<Animator> ();
+
+		myStamina = player.GetComponent<PlayerStamina> ();
 		anim = GetComponent<Animation>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButton (0)) {
-			// swing sword animation
-			if (!hiding) {
-				//animator.SetBool ("isAttack", true);
-				anim.Play("SwingSword");
-				isSwinging = true;
+		if (myStamina.hasStaminaToAttack() && !myStamina.getStaminaIsDrained()) {
+			if (Input.GetMouseButton (0)) {
+				// swing sword animation
+				if (!hiding) {
+					//animator.SetBool ("isAttack", true);
+					anim.Play ("SwingSword");
+					isSwinging = true;
+				}
 			}
 		}
 
@@ -56,11 +63,11 @@ public class SwordScript : MonoBehaviour {
 		isSwinging = false;
 	}
 
-	public static bool getIsSwinging() {
+	public bool getIsSwinging() {
 		return isSwinging;
 	}
 
-	public static bool getIsHiding() {
+	public bool getIsHiding() {
 		return hiding;
 	}
 }

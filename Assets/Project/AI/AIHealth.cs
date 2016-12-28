@@ -8,6 +8,8 @@ public class AIHealth : MonoBehaviour {
 	public float maxHealth = 500.0f;
 	public float currentHealth = 0.0f;
 
+	public GameObject playerSword;
+
 	private bool isDead;
 	private Animation anim;
 	private Vector3 playerPos;
@@ -24,6 +26,7 @@ public class AIHealth : MonoBehaviour {
 		healthBar = thisAI.transform.GetChild (5).FindChild("Health").gameObject;
 		healthBar.transform.localScale = new Vector3(1, 1, 1);
 
+		playerSword = GameObject.FindGameObjectWithTag ("Player");
 		playerPos = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
 	}
 	
@@ -41,7 +44,7 @@ public class AIHealth : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Player" && SwordScript.getIsSwinging()) {
+		if (other.gameObject.tag == "Player" && playerSword.GetComponent<SwordScript>().getIsSwinging()) {
 			currentHealth -= Random.Range (45, 65);
 			currentHealth = Mathf.Round (currentHealth);
 

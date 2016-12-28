@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour {
-	public GameObject player;
+	public GameObject fpsController;
 	// because the healthbar UI is split into 2 bars
 	public GameObject rightHealth;
 	public GameObject leftHealth;
@@ -67,7 +67,7 @@ public class PlayerHealth : MonoBehaviour {
 
 		healthText.GetComponent<Text> ().text = currentHealth + "/ " + maxHealth;
 
-		if (SwordScript.getIsHiding ()) {
+		if (fpsController.transform.GetChild(1).GetComponent<SwordScript>().getIsSwinging()) {
 			if (numFramesToSkip == 5) {
 				regenHealth ();
 				numFramesToSkip = 0;
