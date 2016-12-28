@@ -8,8 +8,10 @@ Created with Unity Engine.
 
 ## Screenshots
 
-![River](Screenshots/river.png "River")
-![Lake](Screenshots/lake.png "Lake")
+<p align="center">
+  <img src="Screenshots/river.png" width="350"/>
+  <img src="Screenshots/lake.png" width="350"/>
+</p>
 
 ## Special Thanks
 
