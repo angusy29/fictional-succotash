@@ -14,15 +14,21 @@ The game itself feels out of proportion (character too large, enemies too small,
 
 ## Gameplay
 
-W, A, S, D for movement.
+### Movement
+W - Move forwards  
+A - Strafe left  
+S - Strafe right  
+D - Move backwards  
+Shift - Run
 
-Left click to attack.
-
-Shift to run.
+### Combat
+Left click - Swing sword  
+Z - Hide sword  
 
 Health bar decreases when hit.
 
-Stamina drains when running or attacking. Player cannot run or attack when the stamina completely depletes, until it replenishes back to full.
+Stamina drains when running or attacking.  
+Player cannot run or attack when the stamina completely depletes, until it replenishes back to full.  
 Stamina will replenish when player is out of combat at a fairly quick pace.
 
 ## Screenshots
