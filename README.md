@@ -9,8 +9,10 @@ Created with Unity Engine.
 ## Screenshots
 
 <p align="center">
-  <img src="Screenshots/river.png" width="350"/>
-  <img src="Screenshots/lake.png" width="350"/>
+  <img src="Screenshots/river.png" width="480"/>
+  <img src="Screenshots/lake.png" width="480"/>
+  <img src="Screenshots/village.png" width="480"/>
+  <img src="Screenshots/scene.png" width="480"/>
 </p>
 
 ## Special Thanks
