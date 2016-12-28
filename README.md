@@ -8,7 +8,7 @@ Created with Unity Engine.
 
 ## Screenshots
 
-![River](fictional-succotash/Screenshots/river.png "River")
+![River](Screenshots/river.png "River")
 
 
 ## Special Thanks
