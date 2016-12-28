@@ -7,7 +7,7 @@ Created with Unity Engine.
 
 ## Screenshots
 
-![River](https://raw.github.com/angusy29/fictional-succotash/master/Screenshots/river.jpg?raw=true "River")
+![River](/Screenshots/river.jpg?raw=true "River")
 
 ## Special Thanks
 
