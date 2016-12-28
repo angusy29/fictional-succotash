@@ -6,6 +6,25 @@ You begin as a rogue warrior named Gash, on a mission to cleanse the land of evi
 
 Created with Unity Engine.
 
+## Disclaimer
+
+I'm a noob game developer so everything is really messy.
+Honestly not even sure if my classes/objects are set up correctly.
+The game itself feels out of proportion (character too large, enemies too small, structures too small).
+
+## Gameplay
+
+W, A, S, D for movement.
+
+Left click to attack.
+
+Shift to run.
+
+Health bar decreases when hit.
+
+Stamina drains when running or attacking. Player cannot run or attack when the stamina completely depletes, until it replenishes back to full.
+Stamina will replenish when player is out of combat at a fairly quick pace.
+
 ## Screenshots
 
 <p align="center">
