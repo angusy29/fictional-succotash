@@ -43,6 +43,10 @@ Stamina will replenish when player is out of combat at a fairly quick pace.
 
 ## Special Thanks
 
+Goblin - PolyNext
+
+Cave Entrance - Chris Nordstrom 
+
 Greatsword of Frozen Night v1 - ZugZug Art
 
 Standard Assets 1.1.2 - Unity Technologies
