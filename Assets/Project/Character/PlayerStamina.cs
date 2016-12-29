@@ -14,15 +14,15 @@ public class PlayerStamina : MonoBehaviour {
 	private float maxStamina;
 	private float stamina;
 
-	private int currFrame;
-
 	private bool isAction; 		// did we do anything this frame
 
 	public float RUN_SPEED;
 	public float WALK_SPEED;
+	public float JUMP_SPEED;
 
 	private float ATTACK_STAMINA_COST = 1;
 	private float RUN_STAMINA_COST = 1;
+	private float JUMP_STAMINA_COST = 20;
 
 	private bool staminaIsDrained;
 
@@ -34,8 +34,6 @@ public class PlayerStamina : MonoBehaviour {
 		maxStamina = 100.0f;
 		stamina = maxStamina;
 
-		currFrame = 0;
-
 		isAction = false;
 		staminaIsDrained = false;
 	}
@@ -45,13 +43,17 @@ public class PlayerStamina : MonoBehaviour {
 		staminaObject.transform.localScale = new Vector3 ((float) (stamina / maxStamina), 1, 1);
 		isAction = false;
 
+		// if stamina is 0 then we don't want the player to be able to run or jump
 		if (stamina == 0) {
 			staminaIsDrained = true;
 			controller.setRunSpeed (WALK_SPEED);
+			controller.setJumpSpeed (0);
 		}
 
 		if (stamina == maxStamina) {
 			staminaIsDrained = false;
+			controller.setRunSpeed (RUN_SPEED);
+			controller.setJumpSpeed (JUMP_SPEED);
 		}
 
 		if (!staminaIsDrained) {
@@ -60,7 +62,6 @@ public class PlayerStamina : MonoBehaviour {
 			if (hasStaminaToRun()) {
 				// user is running so decrease stamina
 				if (Input.GetKey (KeyCode.LeftShift)) {
-					controller.setRunSpeed (RUN_SPEED);
 					stamina -= RUN_STAMINA_COST;
 					isAction = true;
 				}
@@ -71,6 +72,13 @@ public class PlayerStamina : MonoBehaviour {
 			if (hasStaminaToAttack()) {
 				if (playerSword.getIsSwinging ()) {
 					stamina -= ATTACK_STAMINA_COST;
+					isAction = true;
+				}
+			}
+
+			if (hasStaminaToJump ()) {
+				if (Input.GetKeyDown(KeyCode.Space)) {
+					stamina -= JUMP_STAMINA_COST;
 					isAction = true;
 				}
 			}
@@ -109,6 +117,14 @@ public class PlayerStamina : MonoBehaviour {
 		if (stamina > RUN_STAMINA_COST - 1) {
 			return true;
 		}
+		return false;
+	}
+
+	public bool hasStaminaToJump() {
+		if (stamina > JUMP_STAMINA_COST - 1) {
+			return true;
+		}
+
 		return false;
 	}
 }

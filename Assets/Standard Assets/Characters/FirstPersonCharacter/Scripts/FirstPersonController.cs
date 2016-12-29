@@ -259,5 +259,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public void setRunSpeed(float speed) {
 			m_RunSpeed = speed;
 		}
+
+		public void setJumpSpeed(float speed) {
+			m_JumpSpeed = speed;
+		}
     }
 }

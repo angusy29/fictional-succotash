@@ -26,7 +26,7 @@ public class AIHealth : MonoBehaviour {
 		healthBar = thisAI.transform.GetChild (5).FindChild("Health").gameObject;
 		healthBar.transform.localScale = new Vector3(1, 1, 1);
 
-		playerSword = GameObject.FindGameObjectWithTag ("Player");
+		playerSword = GameObject.FindGameObjectWithTag ("PlayerWeapon");
 		playerPos = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
 	}
 	
@@ -44,7 +44,7 @@ public class AIHealth : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Player" && playerSword.GetComponent<SwordScript>().getIsSwinging()) {
+		if (other.gameObject.tag == "PlayerWeapon" && playerSword.GetComponent<SwordScript>().getIsSwinging()) {
 			currentHealth -= Random.Range (45, 65);
 			currentHealth = Mathf.Round (currentHealth);
 
