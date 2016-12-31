@@ -2,15 +2,12 @@
 
 A fictional fantasy RPG. 
 
-You begin as a rogue warrior named Gash, on a mission to cleanse the land of evil.
-
 Created with Unity Engine.
 
 ## Disclaimer
 
 I'm a noob game developer so everything is really messy.
-Honestly not even sure if my classes/objects are set up correctly.
-The game itself feels out of proportion (character too large, enemies too small, structures too small).
+Honestly not even sure if my classes/objects are set up correctly.  
 
 ## Gameplay
 
@@ -33,6 +30,9 @@ Player cannot run or attack when the stamina completely depletes, until it reple
 Stamina will replenish when player is out of combat at a fairly quick pace.
 
 ## Screenshots
+
+There are currently two different scenes, River Succotash and Western Highlands.
+Player can travel between the two scenes using the cave entrance.
 
 <p align="center">
   <img src="Screenshots/river.png" width="480"/>
