@@ -40,6 +40,7 @@ Stamina will replenish when player is out of combat at a fairly quick pace.
   <img src="Screenshots/village.png" width="480"/>
   <img src="Screenshots/scene.png" width="480"/>
   <img src="Screenshots/cave.png" width="480"/>
+  <img src="Screenshots/snow.png" width="480"/>
 </p>
 
 ## Special Thanks
