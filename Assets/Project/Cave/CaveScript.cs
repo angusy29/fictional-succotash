@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CaveScript : MonoBehaviour {
 
@@ -31,6 +32,7 @@ public class CaveScript : MonoBehaviour {
 		
 			if (Input.GetKeyDown (KeyCode.E)) {
 				print ("User entered cave!");
+				SceneManager.LoadScene ("Scenes/" + caveNameText.GetComponent<Text>().text);
 			}
 		}
 	}
