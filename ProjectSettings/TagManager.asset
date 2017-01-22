@@ -8,6 +8,8 @@ TagManager:
   - EnemyWeapon
   - PlayerWeapon
   - ActionButton
+  - Exit
+  - Entrance
   layers:
   - Default
   - TransparentFX
