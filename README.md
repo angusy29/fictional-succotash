@@ -32,7 +32,8 @@ Stamina will replenish when player is out of combat at a fairly quick pace.
 ## Screenshots
 
 There are currently two different scenes, River Succotash and Western Highlands.
-Player can travel between the two scenes using the cave entrance.
+Player can travel between the two scenes using the cave entrance.  
+A portal in the Western Highlands brings the user to the Arcane Sanctuary, a procedurally generated dungeon.
 
 <p align="center">
   <img src="Screenshots/river.png" width="480"/>
@@ -41,6 +42,7 @@ Player can travel between the two scenes using the cave entrance.
   <img src="Screenshots/scene.png" width="480"/>
   <img src="Screenshots/cave.png" width="480"/>
   <img src="Screenshots/snow.png" width="480"/>
+  <img src="Screenshots/procedural.png" width="480"/>
 </p>
 
 ## Special Thanks
